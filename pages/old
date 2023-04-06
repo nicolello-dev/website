@@ -1,0 +1,208 @@
+import type { NextPage } from 'next'
+import { Header } from './_header'
+import Image from 'next/image'
+import Head from 'next/head'
+import meStyles from '../styles/Me.module.css'
+import code from '../styles/code.module.css'
+import Content from './_content'
+// import { useEffect, useState } from 'react'
+
+const Home: NextPage = () => {
+
+	// scrolling effect
+	// const msg = "Ilaria migone - web and Python developer. ";
+	// const chars = Array.from(msg);
+
+	// const [scrollTitle, setScrollTitle] = useState(msg);
+
+	// useEffect(() => {
+	// 	const intervalId = setInterval(() => {
+	// 	  setScrollTitle(prevTitle => {
+	// 		const lastChar = prevTitle.charAt(0);
+	// 		const restChars = prevTitle.substring(1, prevTitle.length);
+	// 		return restChars + lastChar;
+	// 	  });
+	// 	}, 120);
+	
+	// 	return () => clearInterval(intervalId);
+	// }, [scrollTitle]);
+	
+	
+	return <>
+		<Head>
+			<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+			<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+			<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+			<link rel="icon" href="/favicons/favicon.ico"/>
+			<link rel="manifest" href="/favicons/site.webmanifest" />
+			<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+			<link rel="shortcut icon" href="/favicons/favicon.ico" />
+			<meta name="msapplication-TileColor" content="#da532c" />
+			<meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+			<meta name="theme-color" content="#ffffff" />
+			<title>Ilaria Migone - web and Python developer</title>
+		</Head>
+		<Header>
+		</Header>
+		<div className={meStyles.about_me}>
+			<h1 id="me">
+				Ciao!👋
+			</h1>
+		</div>
+		<div className={meStyles.imageWrapper}>
+			<div className={meStyles.contentbox}>
+				<Image className={meStyles.image} src="/pfp.png" layout="fill" />
+			</div>
+			<div className={meStyles.content}>
+				<h2>
+					I am Ilaria Migone, a web and Python developer based in Florence, Italy.
+				</h2>
+				<p>
+					I'm 18 years old and am a native speaker of Spanish and Italian.
+					<br />
+					I love playing the piano: I've been playing it since I was 4.
+					<br />
+					My favorite composer is Chopin, but Rachmaninoff is a very good one too.
+					<br />
+					I am currently playing Chopin's "Ballade no. 1 in G minor",
+					and you can see my progress on youtube.
+				</p>
+			</div>
+		</div>
+		<div className={meStyles.imageWrapperReverse}>
+			<div className={meStyles.content}>
+				<h2>
+					As you could probably tell, I love technology.
+				</h2>
+				<p>
+					Since I was little I loved discovering how things were made,
+					and when I grew up a little more,
+					I started building stuff. First, it was just coding.
+					I started with Python, perhaps 3 years ago,
+					and never stopped. I then expanded my field of knowledge to robotics,
+					building obstacle-avoiding cars and egg-safe cranes,
+					and participating in the FIRST Tech Competition with my old school's robotics team.
+				</p>
+			</div>
+			<div className={meStyles.contentbox}>
+				<Image className={meStyles.image} src="/ftc.jpeg" layout="fill" />
+			</div>
+		</div>
+		<div className={meStyles.about_me}>
+			<h1 id="projects">
+				Projects 👩‍💻
+			</h1>
+		</div>
+{/* 		<ScrollableWrapper>
+			<ScrollableContent src="/ftc.jpeg">
+				<h3>
+					Some random title
+				</h3>
+				<p>
+					Some longer text to see how this works, lorem ipsum dolor sit amet
+				</p>
+			</ScrollableContent>
+		</ScrollableWrapper> */}
+		<Content
+			reverse="true"
+			imageSrc="/reddit-CLI.png"
+			link="https://github.com/ilariiiiia/redditCLI"
+			h3="Reddit CLI">
+			<p>
+				An old school approach to a nerdy site.
+				<br />
+				Written in Python, using praw.
+				<br />
+				More about it <a href="https://github.com/ilariiiiia/redditCLI" target="_blank">here</a>
+			</p>
+		</Content>
+		<Content
+			reverse="false"
+			imageSrc="/rock-paper-scissor.png"
+			link="https://github.com/ilariiiiia/RockPaperScissorBattle"
+			h3="Rock, Paper, Scissor">
+			<p>
+				With a mechanism similar to the Rock, Paper, Scissor game,
+				in which 50 dots of each color try to eat one another.
+				<br />
+				Made with Python, using pygame.
+				<br />
+				More about it&nbsp;
+				<a href="https://github.com/ilariiiiia/RockPaperScissorBattle" target="_blank">here</a>
+				<br />
+				Play it on replit&nbsp;
+				<a href="https://replit.com/@Nicolello/RockPaperScissorBattle" target="_blank">here</a>
+			</p>
+		</Content>
+		<Content
+			reverse="true"
+			imageSrc="/newton.png"
+			link="https://github.com/ilariiiiia/Newton-Rhapson-Method"
+			h3="Newton Rhapson Method">
+			<p>
+				A really fast way to find the zero of a function, made step by step.
+				<br />
+				Insert a function, put a starting point and press enter to do it step-by-step.
+				Made for my class
+				<br />
+				Written in Python, using pygame.
+				<br />
+				More about it&nbsp;
+				<a href="https://github.com/ilariiiiia/Newton-Rhapson-Method" target="_blank">here</a>
+				<br />
+				View it on replit&nbsp;
+				<a href="https://replit.com/@Nicolello/Newton-Rhapson-Method" target="_blank">here</a>
+			</p>
+		</Content>
+		<Content
+			reverse="false"
+			imageSrc="/teatro.jpg"
+			link="https://github.com/ilariiiiia/teatrocastelnuovo"
+			h3="Teatro Castelnuovo">
+			<p>
+				A website for my school's theater program. I am quite proud of it.
+				<br/>
+				It will be added to my school's website soon, and it will be updated with photos of us and our teachers.
+				<br/>
+				In the future, you might be able to buy tickets there
+				<br/>
+				Made with plain HTML, CSS, and Javascript
+			</p>
+		</Content>
+		<div className={meStyles.about_me}>
+			<h1 id="contact">
+				Contact ☎
+			</h1>
+		</div>
+		<footer className={code.footer}>
+			<code className={code.code}>
+				<div>
+				<p className={code.lightblue}>let&nbsp;</p>
+				<p className={code.white}>Ilaria&nbsp;</p>
+				<p className={code.red}>=&nbsp;</p>
+				<p className={code.red}>new&nbsp;</p>
+				<p className={code.green}>Person&nbsp;</p>
+				<p className={code.red}>(</p> 
+				</div>
+				<div>
+				<p className={code.orange}>&emsp; &emsp; email&nbsp;</p>
+				<p className={code.red}>=</p>
+				<a className={code.underline} href="mailto:nicolamigone179@gmail.com">"nicolamigone179@gmail.com"</a><span className={code.white}>,</span>
+				</div>
+				<div>
+				<p className={code.orange}>&emsp; &emsp; github&nbsp;</p>
+				<p className={code.red}>=</p>
+				<a className={code.underline} href="https://github.com/ilariiiiia">"ilariiiiia"</a><span className={code.white}>,</span>
+				</div>
+				<div>
+				<p className={code.orange}>&emsp; &emsp; instagram&nbsp;</p>
+				<p className={code.red}>=</p>
+				<a className={code.underline} href="https://instagram.com/i_called_my_teacher_mom">"I_called_my_teacher_mom"</a>
+				</div>
+				<p className={code.red}>)<span className={code.white}>;</span></p>
+			</code>
+		</footer>
+	</>
+}
+
+export default Home

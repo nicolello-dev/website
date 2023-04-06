@@ -1,0 +1,108 @@
+.imageWrapper > div, .imageWrapperReverse > div {
+	margin: 8px;
+	width: 100%;
+	max-width: 600px;
+}
+
+.content {
+	box-shadow: 0px 0px 15px white;
+	background-color: #1c2029;
+	border-radius: 20px;
+	padding: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	height: min-content;
+}
+
+.contentbox {
+	aspect-ratio: 1080 / 720;
+	border-radius: 20px;
+	box-shadow: 0px 0px 15px black;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.image {
+	border-radius: 20px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.imageWrapper {
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
+	margin: 16px;
+}
+
+.imageWrapperReverse {
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	align-items:center;
+	margin: 16px;
+}
+
+.about_me {
+	font-size: 32px;
+	margin: 16px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.about_me > h1 {
+	color: #FFF;
+	text-shadow: 0px 0px 10px #FFF;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+.project_type {
+	font-size: 24px;
+	margin: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 20px #1c2333
+	}
+	to {
+		text-shadow: 0 0 30px #8690a7
+	}
+}
+
+@webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 20px #1c2333
+	}
+	to {
+		text-shadow: 0 0 30px #8690a7
+	}
+}
+
+@media only screen and (max-width: 1260px) {
+	.imageWrapperReverse {
+		flex-direction: column-reverse;
+	}
+}

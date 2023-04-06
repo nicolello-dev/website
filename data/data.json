@@ -1,0 +1,23 @@
+{
+    "people": {
+        "Ilaria": [
+            {
+                "date": 4,
+                "amount": -5,
+                "notes": ""
+            }
+        ],
+        "Giovanni": [
+            {
+                "date": 5,
+                "amount": 15,
+                "notes": "Some short text"
+            }
+        ],
+        "123123123123": [
+            {
+                "somerandomstuff": 123123
+            }
+        ]
+    }
+}
