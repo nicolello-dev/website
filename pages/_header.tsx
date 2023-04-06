@@ -1,7 +1,7 @@
 import headerStyles from '../styles/Header.module.css'
 import Image from 'next/image'
 
-export function Header(props: any){
+export default function Header(props: any){
 	return <>
 	<div className={headerStyles.headerAlert}>
 		<p>

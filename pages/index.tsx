@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
-import { Header } from './_header'
+import Header from './_header'
 import Image from 'next/image'
 import Head from 'next/head'
 import meStyles from '../styles/Me.module.css'
 import scrollStyles from '../styles/scroll.module.css'
 import code from '../styles/code.module.css'
-import { ScrollableContent, ScrollableWrapper } from './_scrollableContent'
+import ScrollableContent from './_scrollableContent'
+import ScrollableWrapper from './_scrollableWrapper'
 // import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {

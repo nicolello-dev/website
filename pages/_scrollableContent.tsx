@@ -3,17 +3,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import scrollStyles from '../styles/scroll.module.css'
 
-export function ScrollableWrapper({ children }: { children: ReactNode }) {
-	return (
-		<>
-			<div className={scrollStyles.scrollableWrapper}>
-				{children}
-			</div>
-		</>
-	)
-}
-
-export function ScrollableContent({ src, link, h3, children }: { src: string, link:string, h3: string, children: ReactNode }) {
+export default function ScrollableContent({ src, link, h3, children }: { src: string, link:string, h3: string, children: ReactNode }) {
 	let router = useRouter();
 	function redirectToURL() {
 		router.push(link);
