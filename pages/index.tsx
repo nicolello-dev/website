@@ -13,7 +13,7 @@ import { useRouter } from 'next/router'
 const Home: NextPage = () => {
 
 	let router = useRouter();
-	function redirectToURL(link) {
+	function redirectToURL(link: string) {
 		router.push(link);
 	}
 
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
 					My favorite composer is Chopin, but Rachmaninov is amazing, too.
 					<br />
 					I am currently playing Chopin&apos;s &quot;Ballade no. 1 in G minor&quot;,
-					and you can see my progress on youtube <a href='https://youtu.be/ncQXVcLu0Fg' target='_blank'>here</a>.
+					and you can see my progress on youtube <a href='https://youtu.be/ncQXVcLu0Fg' target='_blank' rel='noreferrer'>here</a>.
 				</p>
 			</div>
 		</div>
