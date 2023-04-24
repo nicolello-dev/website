@@ -94,15 +94,22 @@
 
 @webkit-keyframes glow {
 	from {
-		text-shadow: 0 0 20px #1c2333
+		text-shadow: 0 0 20px #1c2333;
 	}
 	to {
-		text-shadow: 0 0 30px #8690a7
+		text-shadow: 0 0 30px #8690a7;
 	}
 }
 
 @media only screen and (max-width: 1260px) {
 	.imageWrapperReverse {
 		flex-direction: column-reverse;
+	}
+	.imageWrapper > * {
+		margin: 20px 8px !important;
+	}
+
+	.imageWrapperReverse > * {
+		margin: 20px 8px !important;
 	}
 }

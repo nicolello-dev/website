@@ -7,9 +7,15 @@ import scrollStyles from '../styles/scroll.module.css'
 import code from '../styles/code.module.css'
 import ScrollableContent from './_scrollableContent'
 import ScrollableWrapper from './_scrollableWrapper'
+import { useRouter } from 'next/router'
 // import { useEffect, useState } from 'react'
 
 const Home: NextPage = () => {
+
+	let router = useRouter();
+	function redirectToURL(link) {
+		router.push(link);
+	}
 
 	// scrolling effect
 	// const msg = "Ilaria migone - web and Python developer. ";
@@ -57,17 +63,17 @@ const Home: NextPage = () => {
 			</div>
 			<div className={meStyles.content}>
 				<h2>
-					I am Ilaria Migone, a web and Python developer based in Florence, Italy.
+					I am Ilaria Migone, a web and Python developer born in Bilbao, Spain and based in Florence, Italy.
 				</h2>
 				<p>
-					I&apos;m 18 years old and am a native speaker of Spanish and Italian.
+					I&apos;m 18 years old and am a native Spanish and Italian speaker.
 					<br />
 					I love playing the piano: I&apos;ve been playing it since I was 4.
 					<br />
-					My favorite composer is Chopin, but Rachmaninoff is a very good one too.
+					My favorite composer is Chopin, but Rachmaninov is amazing, too.
 					<br />
 					I am currently playing Chopin&apos;s &quot;Ballade no. 1 in G minor&quot;,
-					and you can see my progress on youtube.
+					and you can see my progress on youtube <a href='https://youtu.be/ncQXVcLu0Fg' target='_blank'>here</a>.
 				</p>
 			</div>
 		</div>
@@ -99,11 +105,44 @@ const Home: NextPage = () => {
 
 		<div className={meStyles.project_type}>
 			<h3>
-				Data <span className={scrollStyles.scrollme}>(Scroll me! -&gt;)</span>
+				Artificial Intelligence
 			</h3>
 		</div>
+		<div className={scrollStyles.contentWrapperCenter} onClick={() => redirectToURL('https://trivia-ai-magic-machine.elvisjk.repl.co')}>
+			<div className={scrollStyles.imageWrapper}>
+				<Image className={scrollStyles.image} src='/trivia-ai.png' alt="Not implemented yet" layout="fill" />
+			</div>
+			<div className={scrollStyles.textWraper}>
+				<h3>
+					Trivia AI Generator for kids
+				</h3>
+				<p>
+					A ChatGPT-powered AI generator that creates trivia questions around a given topic.
+					<br/>
+					Made for kids, hence why the theme.
+					<br/>
+					Made with Python, GPT-3.5 davinci and Flask
+				</p>
+			</div>
+		</div>
+
+		<div className={meStyles.project_type}>
+			<h3>
+				Data <span className={scrollStyles.scrollme}>(Scroll me! -&gt;)</span>
+			</h3>
+		</div>		
 
 		<ScrollableWrapper>
+			<ScrollableContent
+				src="/blaseball.png"
+				link="https://blaseball-copy.vercel.app/"
+				h3="Blaseball copy [WIP]">
+				<p>
+					A website where you can simulate basketball games within multiple teams at the same time.
+					<br/>
+					Made with NextJS, TypeScript, and SQLite (Soon...)
+				</p>
+			</ScrollableContent>
 			<ScrollableContent
 				src="/nba.jpg"
 				link="https://replit.com/@Nicolello/NBA-Score-Scraping"
@@ -257,17 +296,17 @@ const Home: NextPage = () => {
 				<p className={code.red}>(</p> 
 				</div>
 				<div>
-				<p className={code.orange}>&emsp; &emsp; email&nbsp;</p>
+				<p className={code.orange}>&emsp; &emsp; email</p>
 				<p className={code.red}>=</p>
 				<a className={code.underline} href="mailto:nicolamigone179@gmail.com">&quot;nicolamigone179@gmail.com&quot;</a><span className={code.white}>,</span>
 				</div>
 				<div>
-				<p className={code.orange}>&emsp; &emsp; github&nbsp;</p>
+				<p className={code.orange}>&emsp; &emsp; github</p>
 				<p className={code.red}>=</p>
 				<a className={code.underline} href="https://github.com/ilariiiiia">&quot;ilariiiiia&quot;</a><span className={code.white}>,</span>
 				</div>
 				<div>
-				<p className={code.orange}>&emsp; &emsp; instagram&nbsp;</p>
+				<p className={code.orange}>&emsp; &emsp; insta</p>
 				<p className={code.red}>=</p>
 				<a className={code.underline} href="https://instagram.com/i_called_my_teacher_mom">&quot;I_called_my_teacher_mom&quot;</a>
 				</div>
