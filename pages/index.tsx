@@ -128,7 +128,7 @@ const Home: NextPage = () => {
 
 		<div className={meStyles.project_type}>
 			<h3>
-				Data <span className={scrollStyles.scrollme}>(Scroll me! -&gt;)</span>
+				Data <span className={scrollStyles.scrollmeFour}>(Scroll me! -&gt;)</span>
 			</h3>
 		</div>		
 
