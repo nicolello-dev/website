@@ -63,7 +63,7 @@ const Home: NextPage = () => {
 			</div>
 			<div className={meStyles.content}>
 				<h2>
-					I am Ilaria Migone, a web and Python developer born in Bilbao, Spain and based in Florence, Italy.
+					I am Nicola Migone, a web and Python developer born in Bilbao, Spain and based in Florence, Italy.
 				</h2>
 				<p>
 					I&apos;m 18 years old and am a native Spanish and Italian speaker.
@@ -200,7 +200,7 @@ const Home: NextPage = () => {
 			</ScrollableContent>
 			<ScrollableContent
 				src="/teatro.jpg"
-				link="https://github.com/ilariiiiia/teatrocastelnuovo"
+				link="https://github.com/nicolello-dev/teatrocastelnuovo"
 				h3="Theater website">
 				<p>
 					A website for my school&apos;s theater program. I am quite proud of it.
@@ -214,7 +214,7 @@ const Home: NextPage = () => {
 			</ScrollableContent>
 			<ScrollableContent
 				src="/paninaro.png"
-				link="https://github.com/ilariiiiia/Paninaro"
+				link="https://github.com/nicolello-dev/Paninaro"
 				h3="Paninaro">
 				<p>
 					A website for my high school students where they can buy sandwiches at the school cafeteria.
@@ -233,7 +233,7 @@ const Home: NextPage = () => {
 		<ScrollableWrapper>
 			<ScrollableContent
 				src="/reddit-CLI.png"
-				link="https://github.com/ilariiiiia/redditCLI"
+				link="https://github.com/nicolello-dev/redditCLI"
 				h3="Reddit CLI">
 				<p>
 					An old school approach to a nerdy site.
@@ -245,7 +245,7 @@ const Home: NextPage = () => {
 			</ScrollableContent>
 			<ScrollableContent
 				src="/rock-paper-scissor.png"
-				link="https://github.com/ilariiiiia/RockPaperScissorBattle"
+				link="https://github.com/nicolello-dev/RockPaperScissorBattle"
 				h3="Rock, paper, scissor">
 				<p>
 					With a mechanism similar to the Rock, Paper, Scissor game,
@@ -262,7 +262,7 @@ const Home: NextPage = () => {
 			</ScrollableContent>
 			<ScrollableContent
 				src="/newton.png"
-				link="https://github.com/ilariiiiia/Newton-Rhapson-Method"
+				link="https://github.com/nicolello-dev/Newton-Rhapson-Method"
 				h3="Newton-Rhapson method">
 				<p>
 					A really fast way to find the zero of a function, made step by step.
@@ -273,7 +273,7 @@ const Home: NextPage = () => {
 					Written in Python, using pygame.
 					<br />
 					More about it&nbsp;
-					<a href="https://github.com/ilariiiiia/Newton-Rhapson-Method" target="_blank" rel="noreferrer">here</a>
+					<a href="https://github.com/nicolello-dev/Newton-Rhapson-Method" target="_blank" rel="noreferrer">here</a>
 					<br />
 					View it on replit&nbsp;
 					<a href="https://replit.com/@Nicolello/Newton-Rhapson-Method" target="_blank" rel="noreferrer">here</a>
@@ -289,7 +289,7 @@ const Home: NextPage = () => {
 			<code className={code.code}>
 				<div>
 				<p className={code.lightblue}>let&nbsp;</p>
-				<p className={code.white}>Ilaria&nbsp;</p>
+				<p className={code.white}>Nicola&nbsp;</p>
 				<p className={code.red}>=&nbsp;</p>
 				<p className={code.red}>new&nbsp;</p>
 				<p className={code.green}>Person&nbsp;</p>
@@ -303,7 +303,7 @@ const Home: NextPage = () => {
 				<div>
 				<p className={code.orange}>&emsp; &emsp; github</p>
 				<p className={code.red}>=</p>
-				<a className={code.underline} href="https://github.com/ilariiiiia">&quot;ilariiiiia&quot;</a><span className={code.white}>,</span>
+				<a className={code.underline} href="https://github.com/nicolello-dev">&quot;nicolello-dev&quot;</a><span className={code.white}>,</span>
 				</div>
 				<div>
 				<p className={code.orange}>&emsp; &emsp; insta</p>
